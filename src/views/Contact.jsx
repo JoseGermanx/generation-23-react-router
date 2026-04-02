@@ -3,7 +3,10 @@
 const Contact = () => {
 
     return (
-        <form action="">Formulario</form>
+    <>
+    <h1>Contacto</h1>
+    <form action="">Formulario de contacto</form>
+    </>
     )
 
 }
