@@ -5,6 +5,8 @@ import Home from './views/Home';
 import User from './views/User';
 import Contact from './views/Contact';
 import NotFound from './views/NotFound';
+import NavBar from './components/NavBar';
+import Footer from './components/Footer';
 
 // Routes define grupo de rutas
 // Route define una Ruta
@@ -13,6 +15,8 @@ import NotFound from './views/NotFound';
 function App() {
 
   return (
+    <>
+    <NavBar />
     <Routes>
       { /* Rutas  */}
       <Route path='/' element={<Home />} />
@@ -22,8 +26,9 @@ function App() {
 
       { /* Ruta comodín */}
       <Route path='*' element={<NotFound />} />
-
     </Routes>
+    <Footer />
+    </>
   )
 }
 
